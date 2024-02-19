@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AuthService } from '../shared/auth.service';
 
 @Component({
@@ -26,5 +26,10 @@ export class RegisterComponent {
     this.auth.register(this.email, this.passwd);
     this.email = '';
     this.passwd = '';
+  }
+
+  confirm_password(passwd: string):void{
+    if(this.passwd === passwd){
+    }
   }
 }
