@@ -2,50 +2,93 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 
+import { GoogleAuthProvider } from '@angular/fire/auth';
+
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  constructor(private fireauth: AngularFireAuth, private router: Router) {}
+  constructor(private fireAuth: AngularFireAuth, private router: Router) {}
 
-  // login method
   login(email: string, passwd: string) {
-    this.fireauth.signInWithEmailAndPassword(email, passwd).then(
-      () => {
-        localStorage.setItem('token', 'true');
-        this.router.navigate(['/dashboard']);
+    this.fireAuth.signInWithEmailAndPassword(email, passwd).then(
+      (user) => {
+        localStorage.setItem('token', JSON.stringify(user.user?.uid));
+        console.log('Login sucessfull');
+        console.log(user);
+        if (user.user?.emailVerified == true) {
+          this.router.navigate(['/dashboard']);
+        } else {
+          this.verifyEmail(user.user);
+          this.router.navigate(['/verify']);
+        }
       },
-      (err) => {
-        alert('something went wrong');
+      (err: Error) => {
+        console.error(err.message);
         this.router.navigate(['/login']);
       }
     );
   }
 
-  // register method
   register(email: string, passwd: string) {
-    this.fireauth.createUserWithEmailAndPassword(email, passwd).then(
-      () => {
-        alert('register sucessfully');
+    this.fireAuth.createUserWithEmailAndPassword(email, passwd).then(
+      (user) => {
+        console.log('user created sucessfully');
+        console.log(user);
         this.router.navigate(['/login']);
+        this.verifyEmail(user.user);
       },
-      (err) => {
-        console.log(err.message);
-        alert(err.message);
+      (err: Error) => {
+        console.error(err.message);
         this.router.navigate(['/register']);
       }
     );
   }
 
-  // signOut method
   logout() {
-    this.fireauth.signOut().then(
-      () => {
+    this.fireAuth.signOut().then(
+      (value) => {
         localStorage.removeItem('token');
-        this.router.navigate(['/login']);
+        this.router.navigate(['']);
       },
-      (err) => {
-        alert('logout faild');
+      (err: Error) => {
+        console.error(err.message);
+      }
+    );
+  }
+
+  forgotpasswd(email: string) {
+    this.fireAuth.sendPasswordResetEmail(email).then(
+      () => {
+        console.log('email sended..');
+        this.router.navigate(['/verify']);
+      },
+      (err: Error) => {
+        console.error(err.message);
+      }
+    );
+  }
+
+  verifyEmail(user: any) {
+    user.sendEmailVerification().then(
+      (res: any) => {
+        console.log(res);
+        this.router.navigate(['/verify']);
+      },
+      (err: Error) => {
+        console.error(err.message);
+      }
+    );
+  }
+
+  googleSignIn() {
+    return this.fireAuth.signInWithPopup(new GoogleAuthProvider()).then(
+      (user) => {
+        localStorage.setItem('token', JSON.stringify(user.user?.uid));
+        this.router.navigate(['/dashboard']);
+      },
+      (err: Error) => {
+        console.error(err.message);
       }
     );
   }
