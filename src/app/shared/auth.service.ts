@@ -1,15 +1,21 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
-
+import { OnInit } from '@angular/core';
 import { GoogleAuthProvider } from '@angular/fire/auth';
+import { UserService } from './user.service';
+import firebase from 'firebase/compat';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AuthService {
-  constructor(private fireAuth: AngularFireAuth, private router: Router) {}
-
+export class AuthService implements OnInit {
+  constructor(
+    private fireAuth: AngularFireAuth,
+    private userService: UserService,
+    private router: Router
+  ) {}
+  ngOnInit(): void {}
   login(email: string, passwd: string) {
     this.fireAuth.signInWithEmailAndPassword(email, passwd).then(
       (user) => {
@@ -33,10 +39,10 @@ export class AuthService {
   register(email: string, passwd: string) {
     this.fireAuth.createUserWithEmailAndPassword(email, passwd).then(
       (user) => {
-        console.log('user created sucessfully');
+        if (user.user) {
+          this.verifyEmail(user.user);
+        }
         console.log(user);
-        this.router.navigate(['/login']);
-        this.verifyEmail(user.user);
       },
       (err: Error) => {
         console.error(err.message);
@@ -47,7 +53,7 @@ export class AuthService {
 
   logout() {
     this.fireAuth.signOut().then(
-      (value) => {
+      () => {
         localStorage.removeItem('token');
         this.router.navigate(['']);
       },
@@ -69,8 +75,8 @@ export class AuthService {
     );
   }
 
-  verifyEmail(user: any) {
-    user.sendEmailVerification().then(
+  verifyEmail(user: firebase.User | null) {
+    user?.sendEmailVerification().then(
       (res: any) => {
         console.log(res);
         this.router.navigate(['/verify']);
@@ -83,7 +89,9 @@ export class AuthService {
 
   googleSignIn() {
     return this.fireAuth.signInWithPopup(new GoogleAuthProvider()).then(
-      (user) => {
+      (user: firebase.auth.UserCredential) => {
+        console.log(user);
+        this.userService.user = user.user;
         localStorage.setItem('token', JSON.stringify(user.user?.uid));
         this.router.navigate(['/dashboard']);
       },
