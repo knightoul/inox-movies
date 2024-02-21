@@ -19,17 +19,12 @@ export class RegisterComponent {
     }
 
     if (this.passwd == '') {
-      alert('please enter passwd');
+      alert('enter password!');
       return;
     }
 
     this.auth.register(this.email, this.passwd);
     this.email = '';
     this.passwd = '';
-  }
-
-  confirm_password(passwd: string):void{
-    if(this.passwd === passwd){
-    }
   }
 }

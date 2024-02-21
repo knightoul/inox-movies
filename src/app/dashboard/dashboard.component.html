@@ -1,2 +1,7 @@
-<p>dashboard works!</p>
+<p>welcome {{ user?.email }}</p>
 <button class="btn btn-error" (click)="auth.logout()">Logout</button>
+<div class="avatar absolute top-6 right-14">
+  <div class="w-24 rounded">
+    <img src="{{ user?.photoURL }}" />
+  </div>
+</div>
