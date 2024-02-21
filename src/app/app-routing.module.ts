@@ -6,11 +6,31 @@ import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { HomeComponent } from './home/home.component';
+import { ShowtimesComponent } from './showtimes/showtimes.component';
+import { CimemasComponent } from './cimemas/cimemas.component';
+import { OffersComponent } from './offers/offers.component';
 
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
     component: HomeComponent
+  },
+  {
+    path:'showtimes',
+    component: ShowtimesComponent
+  },
+  {
+    path:'cinemas',
+    component: CimemasComponent
+  },
+  {
+    path:'offers',
+    component: OffersComponent
   },
   {
     path: 'login',

@@ -12,6 +12,11 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ShowtimesComponent } from './showtimes/showtimes.component';
+import { OffersComponent } from './offers/offers.component';
+import { CimemasComponent } from './cimemas/cimemas.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     RegisterComponent,
     VerifyEmailComponent,
     ForgotPasswordComponent,
+    HomeComponent,
+    NavbarComponent,
+    ShowtimesComponent,
+    OffersComponent,
+    CimemasComponent,
   ],
   imports: [
     BrowserModule,
