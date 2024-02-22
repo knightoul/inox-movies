@@ -26,19 +26,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    /*if (this.userService.user) {
-      console.log('UID: ', this.userService.user.uid);
-      console.log('EMAIL: ', this.userService.user.email);
-      this.router.navigate(['dashboard']);
-    }*/
-    /* this.fireAuth.authState.subscribe((user) => {
-       console.log('-------------------------------------');
-       console.log(user);
-       console.log('-------------------------------------');
-     });
-     */
-  }
+  ngOnInit(): void {}
 
   login(): void {
     if (this.email == '') {
