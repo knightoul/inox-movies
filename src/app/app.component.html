@@ -1,7 +1,6 @@
-<div>
-  <app-navbar></app-navbar>
+<div class="h-dvh w-dvw relative">
+  <app-navbar (login)="openSignIn()"></app-navbar>
   <div class="h-screen w-screen flex justify-center items-center">
     <router-outlet></router-outlet>
   </div>
-  
 </div>
