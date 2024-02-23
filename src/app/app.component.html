@@ -1,14 +1,21 @@
-<div class="h-dvh w-dvw relative">
-  <app-navbar (login)="openSignIn()"></app-navbar>
+<div class="w-dvw h-dvh">
+  <app-navbar (loginClick)="loginModal.showModal()"></app-navbar>
   <div class="h-screen w-screen flex justify-center items-center">
     <router-outlet></router-outlet>
   </div>
+
+  <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+  <dialog id="my_modal_3" class="modal" #loginModal>
+    <div
+      class="modal-box h-3/4 w-fit p-5 flex flex-col gap-5 justify-center items-center"
+    >
+      <form method="dialog" class="">
+        <h1 class="font-semibold">Continue after Login</h1>
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+          ✕
+        </button>
+      </form>
+      <app-login-overlay></app-login-overlay>
+    </div>
+  </dialog>
 </div>
-<!-- <div class="absolute top-0 left-0">
-  <div
-    class="h-screen z-0 opacity-60 w-screen bg-slate-400 absolute top-0 left-0 flex justify-center items-center"
-  ></div>
-  <div class="releative top-0 left-0 z-20 bg-white border-black">
-    <app-login></app-login>
-  </div>
-</div> -->

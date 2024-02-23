@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AngularFireModule } from '@angular/fire/compat';
-
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { enviroment } from '../enviroments/enviroment';
@@ -17,7 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { OffersComponent } from './offers/offers.component';
 import { CimemasComponent } from './cimemas/cimemas.component';
-import { LocationCardComponent } from './location-card/location-card.component';
+import { LoginOverlayComponent } from './login/login-overlay/login-overlay.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +32,14 @@ import { LocationCardComponent } from './location-card/location-card.component';
     ShowtimesComponent,
     OffersComponent,
     CimemasComponent,
-    LocationCardComponent,
+    LoginOverlayComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(enviroment.firebaseConfig),
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
