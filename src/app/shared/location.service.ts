@@ -1,9 +1,13 @@
-import { Injectable } from '@angular/core';
-
+import { Injectable, OnInit } from '@angular/core';
+import { Place } from '../types/place';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class LocationService {
+export class LocationService implements OnInit {
+  public places: Place[] | null = null;
 
-  constructor() { }
+  constructor(private afs: AngularFirestore) {}
+
+  ngOnInit(): void {}
 }
