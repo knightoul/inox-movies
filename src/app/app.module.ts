@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { OffersComponent } from './offers/offers.component';
 import { CimemasComponent } from './cimemas/cimemas.component';
+import { LocationCardComponent } from './location-card/location-card.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CimemasComponent } from './cimemas/cimemas.component';
     ShowtimesComponent,
     OffersComponent,
     CimemasComponent,
+    LocationCardComponent,
   ],
   imports: [
     BrowserModule,
