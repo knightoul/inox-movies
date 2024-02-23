@@ -7,7 +7,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { HomeComponent } from './home/home.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
-import { CimemasComponent } from './cimemas/cimemas.component';
+import { CinemasComponent } from './cinemas/cinemas.component';
 import { OffersComponent } from './offers/offers.component';
 
 const routes: Routes = [
@@ -21,15 +21,15 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path:'showtimes',
+    path: 'showtimes',
     component: ShowtimesComponent
   },
   {
-    path:'cinemas',
-    component: CimemasComponent
+    path: 'cinemas',
+    component: CinemasComponent
   },
   {
-    path:'offers',
+    path: 'offers',
     component: OffersComponent
   },
   {
@@ -58,4 +58,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
