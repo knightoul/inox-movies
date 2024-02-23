@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { OffersComponent } from './offers/offers.component';
-import { CimemasComponent } from './cimemas/cimemas.component';
+import { CinemasComponent } from './cinemas/cinemas.component';
 import { LoginOverlayComponent } from './login/login-overlay/login-overlay.component';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { LoginOverlayComponent } from './login/login-overlay/login-overlay.compo
     NavbarComponent,
     ShowtimesComponent,
     OffersComponent,
-    CimemasComponent,
+    CinemasComponent,
     LoginOverlayComponent,
   ],
   imports: [
@@ -44,4 +44,4 @@ import { LoginOverlayComponent } from './login/login-overlay/login-overlay.compo
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
