@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CinemaHallComponent } from './cinema-hall/cinema-hall.component';
+
 
 @Component({
   selector: 'app-cinemas',
