@@ -44,4 +44,4 @@ import { LoginOverlayComponent } from './login/login-overlay/login-overlay.compo
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
