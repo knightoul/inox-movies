@@ -23,6 +23,8 @@ import { HallsComponent } from './cinemas/cinema-hall/halls/halls.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { ImageCarouselComponent } from './home/image-carousel/image-carousel.component';
 import { SeatbookingComponent } from './seatbooking/seatbooking.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { SeatbookingComponent } from './seatbooking/seatbooking.component';
     MovieCardComponent,
     ImageCarouselComponent,
     SeatbookingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
