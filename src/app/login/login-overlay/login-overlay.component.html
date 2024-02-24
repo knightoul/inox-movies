@@ -1,5 +1,5 @@
-<form class="h-1/2 w-fit">
-  <label class="input input-bordered flex items-center gap-2">
+<form class="h-1/2 w-full">
+  <label class="input input-bordered flex items-center gap-2 mt-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
@@ -22,7 +22,7 @@
     />
   </label>
 
-  <label class="input input-bordered flex items-center gap-2 my-2">
+  <label class="input input-bordered flex items-center gap-2 my-2 mt-5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
@@ -43,9 +43,9 @@
       [(ngModel)]="password"
     />
   </label>
-  <button class="btn block w-full" (click)="login()">Login</button>
-  <a routerLink="/register" class="block py-1">don't have account / register</a>
-  <a class="hover:cursor-pointer block mt-10" (click)="signInWithGoogle()"
+  <button class="btn block w-full mt-5" (click)="login()">Login</button>
+  <a routerLink="/register" class="block py-1 text-center pt-5 tracking-low hover:text-blue-400 ">don't have account / register</a>
+  <a class="hover:cursor-pointer block mt-5" (click)="signInWithGoogle()"
     ><div
       class="bg-base-100 shadow-xl p-3 flex justify-between items-center rounded-lg"
     >
