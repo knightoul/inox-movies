@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { OffersComponent } from './offers/offers.component';
+import { SeatbookingComponent } from './seatbooking/seatbooking.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'verify',
     component: VerifyEmailComponent,
+  },
+  {
+    path: 'seatbooking',
+    component: SeatbookingComponent,
   },
 ];
 

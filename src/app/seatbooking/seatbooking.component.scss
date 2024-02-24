@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.bread-nav, li{
+    @apply pl-2; 
+    // @apply py-4;
+
+}
+
+.time-drop li{
+    
+    @apply px-6;
+    @apply py-2;
+    @apply border-r;
+    @apply border-r-black;
+    @apply rounded-br;
+}
+
+.time-drop{
+    .btn{
+        @apply bg-none;
+        :hover{
+            @apply bg-white;
+        }
+    }
+}
