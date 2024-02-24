@@ -20,6 +20,8 @@ import { CinemasComponent } from './cinemas/cinemas.component';
 import { LoginOverlayComponent } from './login/login-overlay/login-overlay.component';
 import { CinemaHallComponent } from './cinemas/cinema-hall/cinema-hall.component';
 import { HallsComponent } from './cinemas/cinema-hall/halls/halls.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { ImageCarouselComponent } from './home/image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { HallsComponent } from './cinemas/cinema-hall/halls/halls.component';
     LoginOverlayComponent,
     CinemaHallComponent,
     HallsComponent,
+    MovieCardComponent,
+    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,
