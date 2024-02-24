@@ -18,6 +18,8 @@ import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { OffersComponent } from './offers/offers.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { LoginOverlayComponent } from './login/login-overlay/login-overlay.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { ImageCarouselComponent } from './home/image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { LoginOverlayComponent } from './login/login-overlay/login-overlay.compo
     OffersComponent,
     CinemasComponent,
     LoginOverlayComponent,
+    MovieCardComponent,
+    ImageCarouselComponent,
   ],
   imports: [
     BrowserModule,
