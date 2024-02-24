@@ -1,20 +1,38 @@
 <div class="card bg-blue-100 m-5 p-3 pb-5 flex flex-col justify-between">
     <div class="flex gap-4">
-        <div class="w-1/4">
-            <video class="rounded-lg" src="assets/video/trailer.mp4" controls muted></video>
+        <div class="w-96">
+            <video class="rounded-lg" autoplay muted loop>
+                <source src="assets/video/trailer.mp4" type="video/mp4"/>
+            </video>
         </div>
-        <div class="w-3/4 flex gap-3">
-            <span class="pl-5 flex flex-col justify-center gap-3">
-                <p class="font-semibold text-2xl tracking-high">INOX City Centre</p>
-                <p>PVR INOX Limited., City Centre, DC-1, Sector-1, Salt Lake Kolkata - 700064, West Bengal
+        <div class="w-3/4 flex gap-2">
+            <span class="pl-5 flex flex-col justify-start gap-3">
+                <p class="font-anta text-4xl tracking-high">INOX City Centre</p>
+                <p class="text-sky-950">PVR INOX Limited., City Centre, DC-1, Sector-1, Salt Lake Kolkata - 700064, West Bengal
                 </p>
+                <span class="font-extrabold">Actors & Actress</span>
+                <div class="flex flex-row justify-between">
+                    <img class="w-14 bg-black" src="assets/template/indi.jpg" alt="actor & actress">
+                    <img class="w-14 bg-black" src="assets/template/indi.jpg" alt="actor & actress">
+                    <img class="w-14 bg-black" src="assets/template/indi.jpg" alt="actor & actress">
+                    <img class="w-14 bg-black" src="assets/template/indi.jpg" alt="actor & actress">
+                    <img class="w-14 bg-black" src="assets/template/indi.jpg" alt="actor & actress">
+                </div>
             </span>
-            <img class="h-24" src="assets/template/star.jpg" alt="movies">
-            <span class="flex flex-col gap-2 items-start">
-                <p class="font-semibold text-xl tracking-low">Film Name</p>
-                <p class="font-semibold text-sm tracking-low">Writer</p>
-                <p class="font-semibold text-lg tracking-low">Rating</p>
-            </span>
+            
+            <div class="flex justify-start p-3 bg-slate-100 rounded-lg w-3/5 gap-3">
+                <img class="h-48 rounded-lg" src="assets/template/star.jpg" alt="movies">
+                <span class="flex flex-col gap-2 items-start">
+                    <p class="font-anta text-3xl tracking-mid"><b>Star Wars</b></p>
+                    <p class="font-semibold text-sm tracking-low">Writer</p>
+                    <p class="font-semibold text-lg tracking-low text-blue-500">★★★☆☆</p>
+                    <p class="bg-slate-200 p-3 rounded-lg flex flex-col ">
+                        <span class="font-extrabold">Review</span>
+                        <span class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                    </p>
+                </span>
+            </div>
+            
 
         </div>
     </div>
@@ -36,7 +54,8 @@
             <div class="carousel-item flex flex-col bg-blue-200 rounded-box">
                 <img src="assets/template/star.jpg" class="rounded-box w-40" />
                 <p class="font-extrabold text-center text-blue-950 tracking-mid pt-2 pb-2">Star War</p>
-            </div><div class="carousel-item flex flex-col bg-blue-200 rounded-box">
+            </div>
+            <div class="carousel-item flex flex-col bg-blue-200 rounded-box">
                 <img src="assets/template/star.jpg" class="rounded-box w-40" />
                 <p class="font-extrabold text-center text-blue-950 tracking-mid pt-2 pb-2">Star War</p>
             </div>

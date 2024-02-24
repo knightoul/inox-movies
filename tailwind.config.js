@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
+    fontFamily:{
+      anta:['Anta'],
+    },
     letterSpacing: {
       high: "0.7rem",
       mid: "0.2rem",
