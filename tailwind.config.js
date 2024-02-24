@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}"],
+  content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
-    letterSpacing:{
-      high:'0.7rem',
-      low:'0.1rem'
-
+    letterSpacing: {
+      high: "0.7rem",
+      low: "0.1rem",
     },
     extend: {},
   },
@@ -26,5 +25,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("flowbite/plugin")],
 };
