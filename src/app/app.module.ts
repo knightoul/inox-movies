@@ -18,6 +18,8 @@ import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { OffersComponent } from './offers/offers.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { LoginOverlayComponent } from './login/login-overlay/login-overlay.component';
+import { CinemaHallComponent } from './cinemas/cinema-hall/cinema-hall.component';
+import { HallsComponent } from './cinemas/cinema-hall/halls/halls.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { LoginOverlayComponent } from './login/login-overlay/login-overlay.compo
     OffersComponent,
     CinemasComponent,
     LoginOverlayComponent,
+    CinemaHallComponent,
+    HallsComponent,
   ],
   imports: [
     BrowserModule,
