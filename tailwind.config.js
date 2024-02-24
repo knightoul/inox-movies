@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
+    letterSpacing:{
+      high:'0.7rem',
+      low:'0.1rem'
+
+    },
     extend: {},
   },
   daisyui: {
