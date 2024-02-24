@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     letterSpacing: {
       high: "0.7rem",
+      mid: "0.2rem",
       low: "0.1rem",
     },
     extend: {},
