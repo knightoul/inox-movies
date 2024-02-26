@@ -23,6 +23,10 @@ import { HallsComponent } from './cinemas/cinema-hall/halls/halls.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { ImageCarouselComponent } from './home/image-carousel/image-carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { CinemaMoviesComponent } from './showtimes/cinema-movies/cinema-movies.component';
+import { DateTimeComponent } from './showtimes/date-time/date-time.component';
+import { DateComponent } from './showtimes/date-time/date/date.component';
+import { TimeComponent } from './showtimes/date-time/time/time.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +47,10 @@ import { FooterComponent } from './footer/footer.component';
     MovieCardComponent,
     ImageCarouselComponent,
     FooterComponent,
+    CinemaMoviesComponent,
+    DateTimeComponent,
+    DateComponent,
+    TimeComponent,
   ],
   imports: [
     BrowserModule,

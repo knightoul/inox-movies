@@ -7,6 +7,8 @@ module.exports = {
     },
     letterSpacing: {
       high: "0.7rem",
+      highmid: "0.7rem",
+      midmid: "0.4rem",
       mid: "0.2rem",
       low: "0.1rem",
     },

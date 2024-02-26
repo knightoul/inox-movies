@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CinemaMoviesComponent } from './cinema-movies/cinema-movies.component';
 
 @Component({
   selector: 'app-showtimes',
