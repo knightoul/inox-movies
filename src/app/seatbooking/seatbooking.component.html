@@ -1,115 +1,624 @@
 <section class="bg-white">
-  <div class="flex flex-row  bg-gray-300 text h-10">
+  <div class="flex flex-row bg-gray-300 text h-10">
     <!-- breadcrumb -->
     <nav class="flex" aria-label="Breadcrumb">
-        <ol  
-          class="bread-nav inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
-        >
-          <li class="inline-flex items-center" aria-current="page">
-            <a
-              href="#"
-              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
-            >
-              <!-- <li class="inline-flex items-center" aria-current="page">
+      <ol
+        class="bread-nav inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+      >
+        <li class="inline-flex items-center" aria-current="page">
+          <a
+            href="#"
+            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+          >
+            <!-- <li class="inline-flex items-center" aria-current="page">
                 <a
                   href="#"
                   class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
                 >
                   <span class="material-symbols-outlined"> arrow_back </span>
                 </a> -->
-              
-              Back
-            </a>
-          </li>
-          <li class="inline-flex items-center" aria-current="page">
+
+            Back
+          </a>
+        </li>
+        <li class="inline-flex items-center" aria-current="page">
+          <a
+            href="#"
+            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+          >
+            <svg
+              class="w-3 h-3 me-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+              />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li aria-current="page">
+          <div class="flex items-center w-fit">
+            <svg
+              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
             <a
               href="#"
-              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+              class="w-fit ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              >select seats</a
             >
-              <svg
-                class="w-3 h-3 me-2.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
-                />
-              </svg>
-              Home
-            </a>
-          </li>
-          <li aria-current="page">
-            <div class="flex items-center w-fit">
-              <svg
-                class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-              <a
-                href="#"
-                class="w-fit ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
-                >select seats</a
+          </div>
+        </li>
+        <li aria-current="page">
+          <div class="flex items-center">
+            <svg
+              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span
+              class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+              >payment</span
+            >
+          </div>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="flex flex-row gap-x-5">
+    <!-- dropdown -->
+    <div class="time-drop dropdown dropdown-hover border-r-2">
+      <div
+        tabindex="0"
+        role="button"
+        class="w-52 hover:bg-white btn btn-ghost m-1"
+      >
+        24 fab, Saturday
+      </div>
+      <ul
+        tabindex="0"
+        class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box"
+      >
+        <li class="btn hover:bg-white border-none w-52 -m-3">
+          24 fab, Saturday
+        </li>
+        <li class="btn hover:bg-white border-none w-52 -m-3">24 fab, Sunday</li>
+      </ul>
+    </div>
+    <!-- tabs -->
+    <div role="tablist" class="tabs tabs-bordered tabs-lg gap-3">
+      <a role="tab" class="tab">
+        <span class="flex flex-col">
+          <small class="seatlayout-lang-wayed">Hindi</small>
+          <small class="seatlayout-time-wayed">
+            <b>10:50 AM</b>
+          </small>
+        </span>
+      </a>
+      <a role="tab" class="tab tab-active"
+        ><span class="flex flex-col">
+          <small class="seatlayout-lang-wayed">English</small>
+          <small class="seatlayout-time-wayed">
+            <b>01:50 AM</b>
+          </small>
+        </span></a
+      >
+      <a role="tab" class="tab"
+        ><span class="flex flex-col">
+          <small class="seatlayout-lang-wayed">Hindi</small>
+          <small class="seatlayout-time-wayed">
+            <b>03:50 AM</b>
+          </small>
+        </span></a
+      >
+    </div>
+  </div>
+
+  <div class="seat-layout">
+    <div class="grid grid-cols-1 gap-2">
+      <div class="col-span-12">
+        <!-- screen -->
+        <div class="screen">
+          <img
+            src="https://www.inoxmovies.com/static/media/Screen.d775def9269722b33fbbe8deb490f5a5.svg"
+            alt="screen"
+            class="screen-img"
+          />
+          <div class="screen-put hidden">
+            <h6>Screen</h6>
+          </div>
+        </div>
+        <!-- Seat available -->
+        <div class="screen-viewa -mt-12 block">
+          <p>SCREEN</p>
+          <div
+            class="seats-info flex place-items-center justify-center text-center max-w-full mb-8"
+          >
+            <div class="available-box"></div>
+            <div class="available-text">
+              <h6>Available</h6>
+            </div>
+            <div class="unavailable-box"></div>
+            <div class="available-text">
+              <h6>SELECTED</h6>
+            </div>
+            <div class="occupied-box"></div>
+            <div class="available-text">
+              <h6>OCCUPIED</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12">
+        <div class="all-seats">
+          <div class="seat-flow-custom-scroll flex flex-col max-h-[600px]">
+            <div class="seats-col-type h-4 mx-0 my-4">
+              <span class="seats_area_type text-xs uppercase font-">
+                CLASSIC (240.00)</span
               >
             </div>
-          </li>
-          <li aria-current="page">
-            <div class="flex items-center">
-              <svg
-                class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
+            <tr class="seats-row">
+              <td class="seats-col">
+                <span class="seat-row-no area">A</span>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
                 />
-              </svg>
-              <span
-                class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                >payment</span
-              >
-            </div>
-          </li>
-        </ol>
-      </nav>
-    
-
-
-
-    
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">1</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">2</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">3</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">4</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">5</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">6</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">7</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">8</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">9</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="invisible inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">X</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="invisible inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">X</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">10</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">11</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">12</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">13</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">14</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">15</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">16</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">17</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">18</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">19</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">20</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">21</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">22</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <input
+                  type="checkbox"
+                  id="react-option"
+                  value=""
+                  class="hidden peer"
+                  required=""
+                />
+                <label
+                  for="react-option"
+                  class="inline-flex items-center justify-center w-7 p-5 text-gray-500 bg-white border-2 border-gray-200 rounded cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-blue- dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-blue-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  <div class="block">
+                    <div class="w-full text-sm font-semibold">23</div>
+                  </div>
+                </label>
+              </td>
+              <td class="seats-col">
+                <span class="seat-row-no area w-6">A</span>
+              </td>
+            </tr>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12"></div>
+    </div>
   </div>
-    <div class="flex flex-row gap-x-5">
-      <!-- dropdown -->
-  <div class="time-drop dropdown dropdown-hover border-r-2">
-    <div tabindex="0" role="button" class="w-52 hover:bg-white  btn btn-ghost m-1 ">24 fab, Saturday </div>
-    <ul tabindex="0" class="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box ">
-      <li class="btn hover:bg-white border-none w-52 -m-3">24 fab, Saturday</li>
-      <li class="btn hover:bg-white border-none w-52 -m-3">24 fab, Sunday </li>
-    </ul>
-  </div>
-  <!-- tabs -->
-  <div role="tablist" class=" tabs tabs-bordered tabs-lg gap-3">
-    <a role="tab" class=" tab">Tab 1</a>
-    <a role="tab" class=" tab tab-active">Tab 2</a>
-    <a role="tab" class="tab">Tab 3</a>
-  </div>
-</div>
-
 </section>
