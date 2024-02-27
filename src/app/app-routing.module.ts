@@ -9,28 +9,29 @@ import { HomeComponent } from './home/home.component';
 import { ShowtimesComponent } from './showtimes/showtimes.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { OffersComponent } from './offers/offers.component';
+import { SeatbookingComponent } from './seatbooking/seatbooking.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'showtimes',
-    component: ShowtimesComponent
+    component: ShowtimesComponent,
   },
   {
     path: 'cinemas',
-    component: CinemasComponent
+    component: CinemasComponent,
   },
   {
     path: 'offers',
-    component: OffersComponent
+    component: OffersComponent,
   },
   {
     path: 'login',
@@ -52,10 +53,15 @@ const routes: Routes = [
     path: 'verify',
     component: VerifyEmailComponent,
   },
+  {
+    path: 'booking',
+    component: SeatbookingComponent,
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,0 +1,56 @@
+<div class="w-full h-full relative">
+  <div class="py-3 pl-3 font-bold w-full">Booking Summery:</div>
+  <div class="py-2 border-y-slate-400 border-y w-full">
+    <div class="flex flex-row justify-start gap-5 pl-3">
+      <!-- card -->
+      <img class="w-16" [src]="userchoiceService.movie?.poster" alt="" />
+      <div class="flex flex-col">
+        <h4 class="font-semibold">{{ userchoiceService.movie?.name }}</h4>
+        <p>{{ userchoiceService.movie?.lang }}</p>
+        <p>location</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-3 py-3 pl-3 border-b border-b-slate-400 h-40">
+    <h4>Selected Seat:</h4>
+    <div class="w-full h-fit px-3 flex flex-row flex-wrap gap-3 mt-2">
+      <div
+        class="px-2 rounded py-1 bg-blue-600 text-stone-100 font-bold"
+        *ngFor="let seat of checkedSeats"
+      >
+        {{ seat.no }}
+      </div>
+    </div>
+  </div>
+  <div class="border-b-slate-400 border-b h-44 px-4 py-3 flex flex-col gap-5">
+    <h4>Tickets:</h4>
+    <div class="w-full h-fit flex flex-row justify-between mt-2">
+      <!--div
+        class="px-2 py-1 bg-blue-600 text-stone-100 font-bold"
+        *ngFor="let seat of checkedSeats"
+      >
+        {{ seat.price }}
+      </div-->
+      <div>10 x 100</div>
+      <div>1000</div>
+    </div>
+    <div class="w-full">
+      <div class="font-bold">Payment Details</div>
+      <div class="w-full flex flex-row justify-between mt-2">
+        <div>Subtotal</div>
+        <div>1000/-</div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row justify-between px-4 py-4">
+    <h1 class="">Grand Total:</h1>
+    <span class="font-bold text-xl text-red-700">{{ totalPrice }}</span>
+  </div>
+  <div class="w-full py-4">
+    <button
+      class="block mx-auto bg-blue-950 text-white hover:bg-blue-700 border rounded-md px-4 py-2"
+    >
+      Proceed to payment
+    </button>
+  </div>
+</div>

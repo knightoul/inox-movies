@@ -1,0 +1,42 @@
+<div class="w-full flex flex-col justify-end items-center">
+  <div class="relative">
+    <img
+      src="https://www.inoxmovies.com/static/media/Screen.d775def9269722b33fbbe8deb490f5a5.svg"
+      alt=""
+    />
+    <span
+      class="absolute top-2/4 left-2/4 -mt-3 text-sm font-semibold text-stone-600"
+      >SCREEN</span
+    >
+  </div>
+  <div
+    class="h-fit w-full flex flex-row items-center justify-center gap-10 py-5 -mt-6"
+  >
+    <span>
+      <div class="h-3 w-3 bg-white border border-black inline-block"></div>
+      Avaliable
+    </span>
+    <span>
+      <div class="h-3 w-3 bg-blue-700 border border-black inline-block"></div>
+      Selected </span
+    ><span>
+      <div class="h-3 w-3 bg-stone-500 border border-black inline-block"></div>
+      Occupied
+    </span>
+  </div>
+  <table class="mt-8">
+    <tr class="pb-4">
+      <th></th>
+      <!-- Empty corner cell -->
+      <th *ngFor="let col of columns" class="text-sm font-light text-slate-400">
+        {{ col }}
+      </th>
+    </tr>
+    <tr *ngFor="let row of rows; let rowIndex = index">
+      <th class="pr-4 text-sm font-light">{{ row }}</th>
+      <td *ngFor="let seat of seats[rowIndex]">
+        <app-seat [seatno]="seat"></app-seat>
+      </td>
+    </tr>
+  </table>
+</div>
