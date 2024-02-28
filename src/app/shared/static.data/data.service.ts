@@ -35,12 +35,12 @@ export class DataService {
       poster:
         'https://firebasestorage.googleapis.com/v0/b/inox-movies.appspot.com/o/poster%2Favengers.webp?alt=media&token=d1b667a2-3da2-4652-9a85-2797e858c7e3',
     },
-    { name: '', category: '', lang: '', poster: '' },
-    { name: '', category: '', lang: '', poster: '' },
-    { name: '', category: '', lang: '', poster: '' },
-    { name: '', category: '', lang: '', poster: '' },
-    { name: '', category: '', lang: '', poster: '' },
-    { name: '', category: '', lang: '', poster: '' },
+    { name: 'Tiger 3', category: 'Action', lang: 'Hindi', poster: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStd1La0J7pfDW52SBnOwrpqG6hTqYDkAUEf1yPGyuZHBORvM_Z' },
+    { name: 'King Kong', category: 'Action,Horror', lang: ' English', poster: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScKmbrbsydfII7jY2nhc9Qo8YYFRk0TFaydwrArnP1pf1A6l76' },
+    { name: 'Boss Baby', category: 'Comedy,Adventure', lang: 'English', poster: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoXtgMlVpiOtLWBSauHiGoZfQsMRVU3l4Ep2hJ8KDUEYqqFwMu' },
+    { name: 'Megamind', category: 'Comedy,Adventure', lang: 'English', poster: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjXH9lRlNT2lUhFNNho5OMwLXcQYj7sSXMmjFipBrCa90oBeVB' },
+    { name: 'Big Hero 6', category: 'Action,Comedy', lang: 'Hindi', poster: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwXEBTWUMWaM9gerkiSgcsSDDcKG7Jk-Fvq5cPzo29sjVdicWc' },
+    { name: 'Dora and the Lost City of Gold', category: 'Adventure,Comedy', lang: 'Hindi', poster: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwVpc3XI5AWKyp-gEpPDBqM5IH8U6q2C3-x53dMsadQKsUqIee' },
   ];
-  constructor() {}
+  constructor() { }
 }
