@@ -7,5 +7,4 @@ import { DateTimeComponent } from '../date-time/date-time.component';
   styleUrl: './cinema-movies.component.scss'
 })
 export class CinemaMoviesComponent {
-
 }
